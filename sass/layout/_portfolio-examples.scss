@@ -1,0 +1,74 @@
+.list-portf-examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    & .item {
+        width: 370px;
+    }
+}
+
+.portf-link {
+    display: block;
+    transition: box-shadow var(--trans-dur-and-func);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+         0px 4px 4px rgba(0, 0, 0, 0.06),
+         1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.card-text {
+    padding: 20px 24px;
+    border: 1px solid var(--color-border-card);
+    border-top: none;
+}
+
+.portf-sutitle {
+    margin-bottom: 4px;
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--color-title);
+}
+
+.portf-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--color-text);
+}
+
+.box-overlay-portf {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform var(--trans-dur-and-func);
+
+    background-color: var(--color-overlay);
+
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-light);
+    line-height: 1.56;
+
+    .portf-link:hover  &, 
+    .portf-link:focus  & {
+        transform: translateY(0);
+    }
+}

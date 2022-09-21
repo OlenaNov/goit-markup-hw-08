@@ -1,0 +1,27 @@
+
+.btn-submit-modal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 52px;
+    text-align: center;
+
+    background: var(--color-accent);
+    @include border-btn ();
+    box-shadow: 0px 4px 4px var(--color-shadow-card);
+
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--color-light);
+    transition: fill var(--trans-dur-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-active-btn);
+    }
+}
+
