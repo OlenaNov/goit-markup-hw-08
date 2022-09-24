@@ -1,3 +1,33 @@
+
+.header-navigation__list {
+    display: none;
+}
+
+.contacts-list {
+    display: none;
+}
+
+.mobile-menu-btn {
+    border: none;
+    padding: 0;
+    background-color: var(--color-light);
+    line-height: 0;
+}
+
+.mobile-menu-btn__icon {
+    width: 40px;
+    height: 40px;
+    fill: var(----color-logo)
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 // .header {
 //     border-bottom: 1px solid var(--color-border);
 // }
