@@ -1,3 +1,10 @@
+
+@media screen and (max-width: 1199px) {
+    .sections-our-work {
+        display: none;
+    }
+}
+
 .list-our-work {
     display: flex;
     justify-content: space-between;
@@ -7,6 +14,10 @@
     }
 }
 
+.our-work-image {
+    width: 370px;
+    height: 294px;
+}
 
 .box-our-work-subtitle {
     position: absolute;
