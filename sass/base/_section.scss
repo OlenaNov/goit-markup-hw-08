@@ -1,4 +1,12 @@
-.sections {
+@media screen and (max-width: 1199px) {
+   .sections {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    } 
+}
+
+@media screen and (min-width: 1200px) {
+    .sections {
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -6,5 +14,15 @@
         padding-top: 0;
     }
 }
+}
+
+// .sections {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+
+//     .main &:nth-child(3) {
+//         padding-top: 0;
+//     }
+// }
 
 
