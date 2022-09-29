@@ -595,10 +595,11 @@ img {
   background-color: var(--color-back-hero);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero__title {
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto 30px;
   font-weight: 900;
   font-size: 26px;
@@ -685,14 +686,14 @@ img {
   flex-direction: column;
 }
 .list-our-adv .item {
-  width: 450px;
+  max-width: 450px;
 }
 .list-our-adv .item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 .our-adv-cont-icon {
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -779,16 +780,19 @@ img {
 }
 
 .list-our-pro > .item {
-  width: 450px;
-  margin-bottom: 30px;
+  max-width: 450px;
   background-color: var(--color-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
+.list-our-pro > .item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .our-pro-image {
-  width: 450px;
-  height: 460px;
+  max-width: 100%;
+  height: auto;
 }
 
 .our-pro-subtitle {
@@ -1000,7 +1004,7 @@ img {
 }
 
 .footer-input-form {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   margin-bottom: 20px;
   padding: 15px 16px;

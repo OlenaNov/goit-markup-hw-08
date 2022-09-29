@@ -4,8 +4,7 @@
 }
 
     .list-our-pro > .item {
-        width: 450px;
-        margin-bottom: 30px;
+        max-width: 450px;
         
         background-color: var(--color-light);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -14,9 +13,13 @@
         border-radius: 0px 0px 4px 4px;
     }
 
+    .list-our-pro > .item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
 .our-pro-image {
-    width: 450px;
-    height: 460px;
+    max-width: 100%;
+    height: auto;
 }
 
 .our-pro-subtitle {

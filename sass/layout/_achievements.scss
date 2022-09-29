@@ -4,7 +4,7 @@
         flex-direction: column;
     
         & .item {
-            width: 450px;
+            max-width: 450px;
         }
     
         & .item:not(:last-child) {
@@ -13,7 +13,7 @@
     }
     
     .our-adv-cont-icon {
-        width: 450px;
+        max-width: 450px;
         height: 120px;
         display: flex;
         justify-content: center;
