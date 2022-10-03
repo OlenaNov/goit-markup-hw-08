@@ -29,6 +29,7 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
+        text-align: center;
         text-transform: uppercase;
     
         color: var(--color-title);
@@ -56,15 +57,26 @@
         .our-adv-cont-icon {
             width: 354px;
         }
+
+        .benefits-subtitle {
+            text-align: start;
+        }
 }
 
 @media screen and (min-width: 1200px) {
     
-    .list-our-adv .item {
-        width: 270px;   
-}
+    .list-our-adv {
 
-.our-adv-cont-icon {
-    width: 270px;
+        & .item {
+            width: 270px;  
+        }
+
+        & .item:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+
+    .our-adv-cont-icon {
+        width: 270px;
     }
 }

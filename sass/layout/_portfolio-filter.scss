@@ -45,6 +45,7 @@
 
 
 @media screen and (min-width: 480px) {
+
     .list-portfolio-filter {
 
         & .item:nth-child(3n+3) {
@@ -70,7 +71,7 @@
 @media screen and (min-width: 1200px) {
 
     .list-portfolio-filter {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     
         & .item:not(:last-child) {
             margin-bottom: 0;

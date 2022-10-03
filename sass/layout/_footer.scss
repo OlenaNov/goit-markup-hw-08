@@ -84,6 +84,7 @@
     }
     }
     
+
     .footer-icon {
         fill: var(--color-light);
     }
@@ -107,7 +108,7 @@
     }
     
     .footer-input-form {
-        max-width: 450px;
+        width: 450px;
         height: 50px;
         margin-bottom: 20px;
         padding: 15px 16px;
@@ -160,6 +161,16 @@
         fill: var(--color-light);
     }
 
+@media screen and (max-width: 479px) {
+
+    .footer-form {
+        width: 100%;
+    }
+
+    .footer-input-form {
+        width: 100%;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .footer {
@@ -168,8 +179,6 @@
             justify-content: space-around;
             align-items: flex-start;
             flex-wrap: wrap;
-            
-
         }
     }
 }
