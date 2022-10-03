@@ -107,6 +107,7 @@
     .mobile-social-list {
         display: flex;
         justify-content: flex-start;
+        flex-wrap: wrap;
     
         & .mobile-social-list__item:not(:last-child) {
             margin-right: 10px;
@@ -130,6 +131,4 @@
     .mobile-menu {
         display: none;
     }
-
-    
 }

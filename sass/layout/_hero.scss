@@ -15,7 +15,6 @@
 
     
     .hero__title {
-        max-width: 360px;
         margin: 0 auto 30px;
     
         font-weight: 900;
@@ -50,6 +49,12 @@
         }
     }
 
+
+@media screen and (max-width: 480px) {
+    .hero__title {
+        max-width: 360px;
+    }
+}
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (max-width: 767px),

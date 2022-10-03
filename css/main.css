@@ -203,6 +203,7 @@ img {
   .mobile-social-list {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
   .mobile-social-list .mobile-social-list__item:not(:last-child) {
     margin-right: 10px;
@@ -285,6 +286,8 @@ img {
   z-index: 100;
   width: 100%;
   height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: var(--color-back-modal);
   opacity: 1;
   visibility: visible;
@@ -302,10 +305,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 609px;
-  margin-left: 15px;
-  margin-right: 15px;
   padding: 40px;
   background: var(--color-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -330,16 +329,22 @@ img {
   cursor: pointer;
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+    height: auto;
+  }
+}
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    height: 609px;
+    height: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
+    height: auto;
   }
 }
 .title-form {
@@ -347,7 +352,7 @@ img {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  line-height: 1.15;
+  line-height: 1.5;
   color: var(--color-title);
 }
 
@@ -476,6 +481,9 @@ img {
   .label-agree {
     font-size: 14px;
     line-height: 1.71;
+  }
+  .title-form {
+    line-height: 1.15;
   }
 }
 @media screen and (max-width: 767px) {
@@ -616,7 +624,6 @@ img {
 }
 
 .hero__title {
-  max-width: 360px;
   margin: 0 auto 30px;
   font-weight: 900;
   font-size: 26px;
@@ -645,6 +652,11 @@ img {
   border: none;
 }
 
+@media screen and (max-width: 480px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile@2x.jpg");
@@ -803,10 +815,6 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.list-our-pro > .item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .our-pro-image {
   max-width: 100%;
   height: auto;
@@ -860,6 +868,11 @@ img {
   fill: var(--color-light);
 }
 
+@media screen and (max-width: 767px) {
+  .list-our-pro > .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .list-our-pro {
     display: flex;
@@ -1172,24 +1185,19 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
-.list-portf-examples .item {
-  max-width: 450px;
-}
 
 .portf-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--trans-dur-and-func);
 }
 .portf-link:hover, .portf-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portf-image {
-  max-width: 450px;
-  height: auto;
-}
-
 .card-text {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid var(--color-border-card);
   border-top: none;
@@ -1236,6 +1244,24 @@ img {
   transform: translateY(0);
 }
 
+@media screen and (max-width: 479px) {
+  .portf-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .list-portf-examples .item {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .list-portf-examples .item {
+    width: 450px;
+  }
+  .portf-image {
+    width: 450px;
+    height: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .list-portf-examples .item {
     width: 354px;

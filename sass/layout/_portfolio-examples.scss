@@ -3,14 +3,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
-    & .item {
-        max-width: 450px;
-    }
 }
 
 .portf-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
     transition: box-shadow var(--trans-dur-and-func);
 
     &:hover,
@@ -21,12 +20,8 @@
     }
 }
 
-.portf-image {
-    max-width: 450px;
-    height: auto;
-}
-
 .card-text {
+    flex-grow: 1;
     padding: 20px 24px;
     border: 1px solid var(--color-border-card);
     border-top: none;
@@ -79,8 +74,36 @@
     }
 }
 
+@media screen and (max-width: 479px) {
+
+    .portf-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .list-portf-examples {
+        & .item {
+            max-width: 450px;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+    .list-portf-examples {
+        & .item {
+            width: 450px;
+        }
+    }
+
+    .portf-image {
+        width: 450px;
+        height: auto;
+    }
+}
 
 @media screen and (min-width: 768px) {
+
     .list-portf-examples {
         & .item {
             width: 354px;
@@ -90,14 +113,15 @@
     .portf-image {
         width: 354px;
         height: 294px;
-
     }
 }
 
 @media screen and (min-width: 1200px) {
+
     .list-portf-examples {
         & .item {
             width: 370px;
+
         }
     }
 
